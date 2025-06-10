@@ -4,7 +4,7 @@ FROM tomcat:9.0.105
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Sao chép file WAR và đổi tên thành ROOT.war để chạy ở root context
-COPY FurnitureShop_11_11_14h.war /usr/local/tomcat/webapps/ROOT.war
+COPY FurnitureShop_11_11_14h-1.0.war /usr/local/tomcat/webapps/ROOT.war
 
 # Khai báo cổng mà container sẽ lắng nghe
 EXPOSE 8080
